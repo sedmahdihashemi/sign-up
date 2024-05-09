@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/output.css">
+</head>
+<body class=" bg-slate-800">
+    <main class="w-full">
+        <div class="w-9/12 lg:w-5/12 flex flex-wrap justify-center mt-10 bg-green-950 rounded-md mx-auto">
+            <section class="w-8/12 lg:w-[85%] flex flex-wrap justify-center mt-5  *:border-red-500" id="toggle">
+                <span class="w-1/2 bg-green-400 py-5 text-white text-lg  lg:text-2xl hover:bg-green-500 flex justify-center items-center cursor-pointer">sign up</span>
+                <span class="w-1/2 bg-gray-400 py-5 text-white  text-lg lg:text-2xl hover:bg-green-500 hover:opacity-100 flex justify-center items-center cursor-pointer opacity-60">log in</span>
+                <h3 class="w-full text-center text-white py-5 mt-5 text-xl lg:text-3xl justify-center" id="sign">Sign Up for Free</h3>
+                <h3 class="w-full text-center text-white py-5 mt-5 text-xl lg:text-3xl hidden justify-center" id="wlc">welcome back</h3>
+                
+                
+            </section>
+            <div class="w-10/12 lg:w-[85%] flex flex-wrap justify-between mt-5 *:border *:border-gray-400  *:text-white " id="all-inp">
+                <input type="text" data-true="off" class="w-5/12 bg-green-950 inp text-lg lg:text-xl py-2 ps-2 lg:ps-5" placeholder="firstName">
+                <input type="text" data-true="off" class="w-5/12 bg-green-950 inp text-lg lg:text-xl py-2 ps-2 lg:ps-5" placeholder="lastName">
+                <p class="w-5/12 border-none hidden " id="pfirst">firstName</p>
+                <p class="w-5/12 border-none hidden " id="plast">lastName</p>
+                <input type="text" data-true="off" class="w-full mt-5 bg-green-950 text-lg lg:text-xl py-2 ps-2 lg:ps-5 " id="gmail-add" placeholder="gmail address">
+                <p class="w-full border-none hidden" id="pgmail">gmail address</p>
+                <input type="text" class="w-full  bg-green-950 text-lg lg:text-xl hidden py-2 ps-2 lg:ps-5 inpin" id="gmail-in" placeholder="gmail address">
+                <p class="w-full border-none hidden " id="pingmail">gmail address</p>
+                <input type="password" data-true="off" class="w-full mt-5 bg-green-950 text-lg lg:text-xl py-2 ps-2 lg:ps-5" id="set-pass" placeholder="set a password">
+                <p class="w-full border-none hidden " id="psetpas">set a password</p>
+                <input type="password" class="w-full bg-green-950 mt-5 text-lg lg:text-xl hidden py-2 ps-2 lg:ps-5 inpin" id="pass-in" placeholder="password">
+                <p class="w-full border-none hidden" id="pinpas">password</p>
+                <!-- <p class="w-full border-none  " id="pinpas">password</p> -->
+                <button class="w-full bg-green-400 text-xl lg:text-[50px] my-5 hover:bg-green-500 py-5 lg:py-10 flex justify-center items-center" id="start">get started</button>
+                <button class="w-full bg-green-400 text-xl lg:text-[50px] my-5 hover:bg-green-500 py-5 lg:py-10 hidden" id="log-in">LOG IN</button>
+            </div>
+
+        </div>
+
+    </main>
+
+<script src="js/master.js"></script>
+</body>
+</html>
+
+<!-- npx tailwindcss -i ./src/css/master.css -o ./src/css/output.css --watch -->
+<!-- https://codepen.io/ehermanson/pen/KwKWEv -->
